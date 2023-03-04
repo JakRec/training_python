@@ -39,3 +39,4 @@ Table contain element
     Open Browser    https://en.wikipedia.org/wiki/Robot_Framework    chrome
     Table Row Should Contain    xpath=//*[@id="mw-content-text"]/div[1]/table[2]    12    Website
     Close Browser
+    
