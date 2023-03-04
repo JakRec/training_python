@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230304 15:11:40.732" rpa="false" schemaversion="3">
+<suite id="s1" name="Wikipedia6" source="D:\IT\projekt\git\wsb_20230303\6\wikipedia6.robot">
+<test id="s1-t1" name="Image is visible" line="18">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://en.wikipedia.org/wiki/Robot_Framework</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230304 15:11:41.172" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Robot_Framework'.</msg>
+<status status="PASS" starttime="20230304 15:11:41.172" endtime="20230304 15:11:42.911"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="mw-content-text"]/div[1]/table[2]/tbody/tr[1]/td/a/img</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230304 15:11:42.993" level="INFO">Element 'xpath=//*[@id="mw-content-text"]/div[1]/table[2]/tbody/tr[1]/td/a/img' is displayed.</msg>
+<status status="PASS" starttime="20230304 15:11:42.911" endtime="20230304 15:11:42.994"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230304 15:11:42.994" endtime="20230304 15:11:45.114"/>
+</kw>
+<status status="PASS" starttime="20230304 15:11:41.171" endtime="20230304 15:11:45.114"/>
+</test>
+<test id="s1-t2" name="List See Also Exist" line="23">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://en.wikipedia.org/wiki/Robot_Framework</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230304 15:11:45.118" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Robot_Framework'.</msg>
+<status status="PASS" starttime="20230304 15:11:45.117" endtime="20230304 15:11:47.059"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="mw-content-text"]/div[1]/ul[1]/li[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230304 15:11:47.110" level="INFO">Element 'xpath=//*[@id="mw-content-text"]/div[1]/ul[1]/li[1]' is displayed.</msg>
+<status status="PASS" starttime="20230304 15:11:47.060" endtime="20230304 15:11:47.110"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230304 15:11:47.111" endtime="20230304 15:11:49.246"/>
+</kw>
+<status status="PASS" starttime="20230304 15:11:45.117" endtime="20230304 15:11:49.246"/>
+</test>
+<test id="s1-t3" name="List Contain Element" line="28">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://en.wikipedia.org/wiki/Robot_Framework</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230304 15:11:49.250" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Robot_Framework'.</msg>
+<status status="PASS" starttime="20230304 15:11:49.249" endtime="20230304 15:11:50.898"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=//*[@id="mw-content-text"]/div[1]/ul[1]/li[1]/a</arg>
+<arg>Acceptance testing</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230304 15:11:50.937" level="INFO">Element 'xpath=//*[@id="mw-content-text"]/div[1]/ul[1]/li[1]/a' contains text 'Acceptance testing'.</msg>
+<status status="PASS" starttime="20230304 15:11:50.899" endtime="20230304 15:11:50.937"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230304 15:11:50.938" endtime="20230304 15:11:53.071"/>
+</kw>
+<status status="PASS" starttime="20230304 15:11:49.249" endtime="20230304 15:11:53.071"/>
+</test>
+<test id="s1-t4" name="Page Contain Element" line="33">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://en.wikipedia.org/wiki/Robot_Framework</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230304 15:11:53.075" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Robot_Framework'.</msg>
+<status status="PASS" starttime="20230304 15:11:53.074" endtime="20230304 15:11:54.747"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Test cases are written using a keyword-testing methodology</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230304 15:11:54.767" level="INFO">Current page contains text 'Test cases are written using a keyword-testing methodology'.</msg>
+<status status="PASS" starttime="20230304 15:11:54.748" endtime="20230304 15:11:54.767"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230304 15:11:54.768" endtime="20230304 15:11:56.894"/>
+</kw>
+<status status="PASS" starttime="20230304 15:11:53.074" endtime="20230304 15:11:56.894"/>
+</test>
+<test id="s1-t5" name="Table contain element" line="38">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://en.wikipedia.org/wiki/Robot_Framework</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230304 15:11:56.898" level="INFO">Opening browser 'chrome' to base url 'https://en.wikipedia.org/wiki/Robot_Framework'.</msg>
+<status status="PASS" starttime="20230304 15:11:56.897" endtime="20230304 15:11:58.830"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>xpath=//*[@id="mw-content-text"]/div[1]/table[2]</arg>
+<arg>12</arg>
+<arg>Website</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" starttime="20230304 15:11:58.830" endtime="20230304 15:11:58.874"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230304 15:11:58.875" endtime="20230304 15:12:00.998"/>
+</kw>
+<status status="PASS" starttime="20230304 15:11:56.897" endtime="20230304 15:12:00.998"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230304 15:12:01.001" endtime="20230304 15:12:01.001"/>
+</kw>
+<status status="PASS" starttime="20230304 15:11:40.732" endtime="20230304 15:12:01.001"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Wikipedia6">Wikipedia6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
