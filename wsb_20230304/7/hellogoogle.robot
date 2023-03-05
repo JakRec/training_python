@@ -8,7 +8,7 @@ Suite Teardown    Close All Browsers
 
 *** Variables ***
 ${PRZEGLADARKA}    headlesschrome
-${HEADLESS}    "headlesschrome" in "${PRZEGLADARKA}"
+${HEADLESS}    "headlesschrome" not in "${PRZEGLADARKA}"
 
 *** Test Cases ***
 Search Robot Framework in Google
