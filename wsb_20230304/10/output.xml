@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.7 on win32)" generated="20230305 10:12:19.736" rpa="false" schemaversion="3">
+<suite id="s1" name="Ex Library" source="D:\IT\projekt\udemy\wsb_20230304\10\ex_library.robot">
+<test id="s1-t1" name="Use Keyword and external Library" line="9">
+<kw name="Echo Hello">
+<kw name="Log" library="BuiltIn">
+<arg>Hello World from keyboard</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230305 10:12:19.761" level="INFO">Hello World from keyboard</msg>
+<status status="PASS" starttime="20230305 10:12:19.761" endtime="20230305 10:12:19.761"/>
+</kw>
+<status status="PASS" starttime="20230305 10:12:19.761" endtime="20230305 10:12:19.761"/>
+</kw>
+<kw name="Hello World" library="ex10">
+<msg timestamp="20230305 10:12:19.762" level="INFO">Hello world</msg>
+<status status="PASS" starttime="20230305 10:12:19.761" endtime="20230305 10:12:19.762"/>
+</kw>
+<status status="PASS" starttime="20230305 10:12:19.760" endtime="20230305 10:12:19.762"/>
+</test>
+<test id="s1-t2" name="Hello_World()" line="12">
+<status status="FAIL" starttime="20230305 10:12:19.763" endtime="20230305 10:12:19.764">Test contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20230305 10:12:19.738" endtime="20230305 10:12:19.766"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Ex Library">Ex Library</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,6 +1,6 @@
 *** Keywords ***
 Echo Hello
-    Log Hello World!
+    Log    Hello World!
 
 *** Test Cases ***
 Use Keyword
